@@ -7,3 +7,13 @@
 3. Double-click on the "Docker.dmg" file and follow the instructions to install it
 
 ![Alt text](https://github.com/aye-thuzar/CS634Project/blob/milestone-1/Screenshot1%20.png "installed docker")
+
+This is my VS Code:
+
+![Alt text](https://github.com/aye-thuzar/CS670Project/blob/milestone-1/Screenshot2.png "installed docker")
+
+This is my Docker Desktop:
+
+![Alt text](https://github.com/aye-thuzar/CS670Project/blob/milestone-1/Screenshot3.png "installed docker")
+
+
