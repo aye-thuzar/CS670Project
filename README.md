@@ -29,7 +29,7 @@ Dataset: https://github.com/suzgunmirac/hupd
  There are two datasets: train and validation. Here are the steps I did:
 
  - Label-to-index mapping for the decision status field
- - map the 'abstract' and 'claims' sections
+ - map the 'abstract' and 'claims' sections and tokenize them using pretrained('distilbert-base-uncased') tokenizer
  - format them
  - use DataLoader with batch_size = 16
 
