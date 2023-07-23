@@ -22,6 +22,17 @@ App Demonstration Video:
 
 Dataset: https://github.com/suzgunmirac/hupd
 
+**Data Preprocessing**
+
+ I used the load_dataset function to load all the patent applications that were filed to the USPTO in January 2016. We specify the date ranges of the training and validation sets as January 1-21, 2016 and January 22-31, 2016, respectively. This is a smaller dataset.
+
+ There are two datasets: train and validation. Here are the steps I did:
+
+ - Label-to-index mapping for the decision status field
+ - map the 'abstract' and 'claims' sections
+ - format them
+ - use DataLoader with batch_size = 16
+
 **milestone3:**
 
 milestone3 notebook: 
