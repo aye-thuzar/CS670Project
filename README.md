@@ -16,17 +16,17 @@ App Demonstration Video:
 
 ***********
 
-milestone1: https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone_1.md
+**milestone1:** https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone_1.md
 
-milestone2: https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone-2.md
+**milestone2:** https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone-2.md
 
 Dataset: https://github.com/suzgunmirac/hupd
 
-milestone3:
+**milestone3:**
 
 milestone3 notebook: 
 
-milestone4:
+**milestone4:**
 
 Please see Milestone4Documentation.md: 
 
