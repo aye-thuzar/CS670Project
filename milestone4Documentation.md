@@ -18,10 +18,6 @@ The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar
 
 ************************
 
-**milestone1:** https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone_1.md
-
-**milestone2:** https://github.com/aye-thuzar/CS670Project/blob/main/README_milestone-2.md
-
 Dataset: https://github.com/suzgunmirac/hupd
 
 **Data Preprocessing**
@@ -52,13 +48,6 @@ milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_
 The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
 
 I tested my shared model here: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_Examples.ipynb
-
-**milestone4:**
-
-Please see Milestone4Documentation.md: https://github.com/aye-thuzar/CS670Project/blob/main/milestone4Documentation.md
-
-Here is the landing page for my app: https://sites.google.com/view/cs670-finetuning-language-mode/home
-
 
 **************
 
