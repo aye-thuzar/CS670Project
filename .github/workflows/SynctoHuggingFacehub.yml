@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://ayethuzar:$HF_TOKEN@ayethuzar/can-i-patent-this main
+        run: git push --force https://aye-thuzar:$HF_TOKEN@ayethuzar/can-i-patent-this main
