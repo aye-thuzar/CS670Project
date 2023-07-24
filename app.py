@@ -24,7 +24,7 @@ if submit:
       outputs = model(**batch)
       #st.write(outputs)
       predictions = F.softmax(outputs.logits, dim = 1)
-      result = "Patentability Score: " + str(predictions.numpy()[1])
+      result = "Patentability Score: " + str(predictions.numpy()[0][1])
       html_str = f"""<style>p.a {{font: bold {28}px Courier;color:#1D5D9B;}}</style><p class="a">{result}</p>"""
       st.markdown(html_str, unsafe_allow_html=True)
       
