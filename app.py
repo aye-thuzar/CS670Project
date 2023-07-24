@@ -13,7 +13,7 @@ st.title('Can I Patent This?')
 # steamlit form
 #option = st.selectbox('Which patent file would you like to test?',('p1', 'p2', 'p3'))
 
-st.write(option)
+#st.write(option)
 
 form = st.form(key='sentiment-form')
 user_input = form.text_area(label = 'Enter your text', value = "I love steamlit and hugging face!")
