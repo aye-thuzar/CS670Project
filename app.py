@@ -13,7 +13,7 @@ st.title('Can I Patent This?')
 # steamlit form
 option = st.selectbox(
     'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    ('p1', 'p2', 'p3'))
 
 st.write(option)
 
