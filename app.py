@@ -12,10 +12,12 @@ st.title('Can I Patent This?')
 
 st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset](https://github.com/suzgunmirac/hupd)")
 
-# steamlit form
-#option = st.selectbox('Which patent file would you like to test?',('p1', 'p2', 'p3'))
+tuple_of_choices = ('Email', 'Home phone', 'Mobile phone')
 
-#st.write(option)
+# steamlit form
+option = st.selectbox('How would you like to be contacted?', tuple_of_choices)
+
+st.write('You selected:', option)
 
 form = st.form(key='sentiment-form')
 user_input = form.text_area(label = 'Enter your text', value = "I love steamlit and hugging face!")
