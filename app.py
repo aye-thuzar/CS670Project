@@ -12,10 +12,10 @@ st.title('Can I Patent This?')
 
 st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset](https://github.com/suzgunmirac/hupd)")
 
-tuple_of_choices = ('Email', 'Home phone', 'Mobile phone')
+tuple_of_choices = ('patent_number', 'title', 'background', 'summary', 'description')
 
 # steamlit form
-option = st.selectbox('How would you like to be contacted?', tuple_of_choices)
+option = st.selectbox('Which other sections would you like to view?', tuple_of_choices)
 
 st.write('You selected:', option)
 
