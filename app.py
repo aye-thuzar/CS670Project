@@ -21,7 +21,7 @@ form = st.form(key='sentiment-form')
 user_input = form.text_area(label = 'Enter your text', value = "I love steamlit and hugging face!")
 submit = form.form_submit_button('Submit')
 
-model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+model_name = "ayethuzar/tuned-for-patentability"
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
