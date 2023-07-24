@@ -42,13 +42,6 @@ if 'decision' in dataframe.columns:
     
 st.write(dataframe)
 
-tuple_of_choices = ('patent_number', 'title', 'background', 'summary', 'description')
-
-# steamlit form
-option = st.selectbox('Which other sections would you like to view?', tuple_of_choices)
-
-st.write('You selected:', option)
-
 user_input_abstract = st.text_area(label = 'abstract', value = dataframe['abstract'][0])
 user_input_claims = st.text_area(label = 'claims', value = dataframe['claims'][0])
 form = st.form(key='abstract-claims-form')
@@ -71,3 +64,11 @@ if submit:
       html_str = f"""<style>p.a {{font: bold {28}px Courier;color:#1D5D9B;}}</style><p class="a">{result}</p>"""
       st.markdown(html_str, unsafe_allow_html=True)
       
+tuple_of_choices = ('patent_number', 'title', 'background', 'summary', 'description')
+
+# steamlit form
+option = st.selectbox('Which other sections would you like to view?', tuple_of_choices)
+
+st.write('You selected:', option)
+
+user_input_other = st.text_area(label = 'other', value = dataframe[option][0])
