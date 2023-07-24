@@ -6,6 +6,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from datasets import load_dataset
 import numpy as np
 import pandas as pd
+from io import StringIO
 
 
 st.title('Can I Patent This?')
