@@ -37,7 +37,9 @@ Dataset: https://github.com/suzgunmirac/hupd
 
 **milestone3:**
 
-milestone3 notebook: 
+The following notebook has the tuned model.
+
+milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb
 
 **milestone4:**
 
