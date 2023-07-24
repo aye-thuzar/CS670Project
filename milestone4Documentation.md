@@ -51,6 +51,8 @@ milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_
 
 The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
 
+I tested my shared model here: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_Examples.ipynb
+
 **milestone4:**
 
 Please see Milestone4Documentation.md: 
