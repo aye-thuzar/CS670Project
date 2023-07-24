@@ -16,6 +16,10 @@ st.write("This model is tuned with all patent applications submitted in Jan 2016
 # prepopulate with a sample csv file that has one patent application
 dataframe = pd.read_csv('patent_application.csv') 
 
+# drop decision column if it exists
+if 'decision' in dataframe.columns:
+    dataframe.drop(['decision'], axis=1, inplace = True)
+
 # to upload a .csv file with one application
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
@@ -33,7 +37,7 @@ if uploaded_file is not None:
 
     # Can be used wherever a "file-like" object is accepted:
     dataframe = pd.read_csv(uploaded_file)
-    st.write(dataframe)
+st.write(dataframe)
 
 tuple_of_choices = ('patent_number', 'title', 'background', 'summary', 'description')
 
