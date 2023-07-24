@@ -10,6 +10,8 @@ import pandas as pd
 
 st.title('Can I Patent This?')
 
+st.write("This model is tuned with all patent applications submitted in Jan 2016 in the Harvard USPTO patent dataset")
+
 # steamlit form
 #option = st.selectbox('Which patent file would you like to test?',('p1', 'p2', 'p3'))
 
