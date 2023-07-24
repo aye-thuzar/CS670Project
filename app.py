@@ -22,6 +22,8 @@ if submit:
     
     with torch.no_grad():
       outputs = model(**batch)
-      st.write(outputs)
+      #st.write(outputs)
       predictions = F.softmax(outputs.logits, dim = 1)
       st.write(predictions)
+      labels = torch.argmax(predictions, dim = 1)
+      st.write(labels)
