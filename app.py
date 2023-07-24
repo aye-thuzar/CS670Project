@@ -42,9 +42,9 @@ if 'decision' in dataframe.columns:
     
 st.write(dataframe)
 
-user_input_abstract = st.text_area(label = 'abstract', value = dataframe['abstract'][0])
-user_input_claims = st.text_area(label = 'claims', value = dataframe['claims'][0])
 form = st.form(key='abstract-claims-form')
+user_input_abstract = form.text_area(label = 'abstract', value = dataframe['abstract'][0])
+user_input_claims = form.text_area(label = 'claims', value = dataframe['claims'][0])
 submit = form.form_submit_button('Submit')
 
 model_name = "ayethuzar/tuned-for-patentability"
