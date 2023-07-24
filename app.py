@@ -4,6 +4,14 @@ import torch.nn.functional as F
 import transformers
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from datasets import load_dataset
+import numpy as np
+import pandas as pd
+
+# Specify the metadata path
+# (You can alternatively provide the local metadata path)
+_METADATA_PATH = "https://huggingface.co/datasets/HUPD/hupd/resolve/main/hupd_metadata_2022-02-22.feather"
+# Read the feather
+df = pd.read_feather(_METADATA_PATH)
 
 st.title('Can I Patent This?')
 
