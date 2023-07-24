@@ -53,9 +53,9 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 text = [user_input_abstract + user_input_claims]
 
-testing = "text " + user_input_abstract
-testing_str = f"{text}"
-st.markdown(testing_str, unsafe_allow_html=True)
+#testing = "text " + user_input_abstract
+#testing_str = f"{text}"
+#st.markdown(testing_str, unsafe_allow_html=True)
 
 if submit:
     batch = tokenizer(text, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
@@ -64,7 +64,7 @@ if submit:
       outputs = model(**batch)
       #st.write(outputs)
       predictions = F.softmax(outputs.logits, dim = 1)
-      result = "Patentability Score: " + str(predictions.numpy()[0][1])
+      result = "Patentability Score: " + str(predictions.numpy()[0])
       html_str = f"""<style>p.a {{font: bold {28}px Courier;color:#1D5D9B;}}</style><p class="a">{result}</p>"""
       st.markdown(html_str, unsafe_allow_html=True)
       
