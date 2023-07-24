@@ -42,15 +42,16 @@ option = st.selectbox('Which other sections would you like to view?', tuple_of_c
 
 st.write('You selected:', option)
 
-form = st.form(key='sentiment-form')
-user_input = form.text_area(label = 'Enter your text', value = dataframe['abstract'][0])
+form = st.form(key='abstract-claims-form')
+user_input_abstract = st.text_area(label = 'abstract', value = dataframe['abstract'][0][0])
+user_input_claims = st.text_area(label = 'claims', value = dataframe['claims'][0][0])
 submit = form.form_submit_button('Submit')
 
 model_name = "ayethuzar/tuned-for-patentability"
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-test = [user_input]
+test = [user_input_abstract + user_input_claims]
 
 if submit:
     batch = tokenizer(test, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
