@@ -1,5 +1,8 @@
 import streamlit as st
+import torch
+import torch.nn.functional as F
 from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 st.title('Can I Patent This?')
 
