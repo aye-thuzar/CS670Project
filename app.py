@@ -11,13 +11,18 @@ form = st.form(key='sentiment-form')
 user_input = form.text_area(label = 'Enter your text', value = "I love steamlit and hugging face!")
 submit = form.form_submit_button('Submit')
 
-if submit:
-    classifier = pipeline("sentiment-analysis") #using the pipeline() function
-    result = classifier(user_input)[0]
-    label = result['label']
-    score = result['score']
+model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-    if label == 'POSITIVE':
-        st.success(f'{label} sentiment (score: {score})')
-    else:
-        st.error(f'{label} sentiment (score: {score})')
+test = [user_input]
+
+if submit:
+    classifier = pipeline("sentiment-analysis", model = model_name) #using the pipeline() function
+    batch = tokenizer(test, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
+    
+    with torch.no_grad():
+      outputs = model(**batch, labels = torch.tensor([1, 0]))
+      st.write(outputs)
+      predictions = F.softmax(outputs.logits, dim = 1)
+      st.write(predictions)
