@@ -13,7 +13,7 @@ st.title('Can I Patent This?')
 
 st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset](https://github.com/suzgunmirac/hupd)")
 
-# to upload a .csv file
+# to upload a .csv file with one application
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     # To read file as bytes:
@@ -40,7 +40,7 @@ option = st.selectbox('Which other sections would you like to view?', tuple_of_c
 st.write('You selected:', option)
 
 form = st.form(key='sentiment-form')
-user_input = form.text_area(label = 'Enter your text', value = "I love steamlit and hugging face!")
+user_input = form.text_area(label = 'Enter your text', value = dataframe['abstract'][0])
 submit = form.form_submit_button('Submit')
 
 model_name = "ayethuzar/tuned-for-patentability"
