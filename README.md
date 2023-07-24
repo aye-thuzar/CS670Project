@@ -2,7 +2,7 @@
 # CS 670 Project - Finetuning Language Models
 
 ************************
-Milestone-3 notebook: https://github.com/aye-thuzar/CS670Project/blob/milestone-3/CS670_milestone_3_AyeThuzar.ipynb
+Milestone-3 notebook: [https://github.com/aye-thuzar/CS670Project/blob/milestone-3/CS670_milestone_3_AyeThuzar.ipynb](https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb)
 
 Hugging Face App: 
 
