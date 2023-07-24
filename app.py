@@ -17,6 +17,10 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 test = [user_input]
 
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
 if submit:
     batch = tokenizer(test, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
     
