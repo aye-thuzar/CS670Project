@@ -2,3 +2,5 @@ streamlit
 transformers
 torch
 datasets
+pandas
+numpy
