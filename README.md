@@ -15,7 +15,7 @@ pinned: false
 
 Milestone-3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb
 
-Hugging Face App: 
+Hugging Face App: https://huggingface.co/spaces/ayethuzar/can-i-patent-this
 
 Landing Page for the App: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
