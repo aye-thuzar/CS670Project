@@ -11,9 +11,7 @@ import pandas as pd
 st.title('Can I Patent This?')
 
 # steamlit form
-option = st.selectbox(
-    'Which patent file would you like to test?',
-    ('p1', 'p2', 'p3'))
+#option = st.selectbox('Which patent file would you like to test?',('p1', 'p2', 'p3'))
 
 st.write(option)
 
