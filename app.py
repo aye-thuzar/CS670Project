@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-st.title('Sentiment Analysis using Transformers pipeline function')
+st.title('Can I Patent This?')
 
 # steamlit form
 form = st.form(key='sentiment-form')
