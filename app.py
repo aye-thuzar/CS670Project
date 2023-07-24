@@ -3,6 +3,7 @@ import torch
 import torch.nn.functional as F
 import transformers
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from datasets import load_dataset
 
 st.title('Can I Patent This?')
 
