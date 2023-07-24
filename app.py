@@ -43,19 +43,19 @@ if 'decision' in dataframe.columns:
 st.write(dataframe)
 
 form = st.form(key='abstract-claims-form')
-user_input_abstract = form.text_area(label = 'abstract', value = dataframe['abstract'][0])
-user_input_claims = form.text_area(label = 'claims', value = dataframe['claims'][0])
+user_input_abstract = form.text_area(label = 'abstract', value = dataframe['abstract'])
+user_input_claims = form.text_area(label = 'claims', value = dataframe['claims'])
 submit = form.form_submit_button('Submit')
 
 model_name = "ayethuzar/tuned-for-patentability"
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-text = [user_input_abstract[0] + user_input_claims[0]]
+text = [user_input_abstract + user_input_claims]
 
 testing = "text " + user_input_abstract
-html_str = f"""<style>p.a {{font: bold {12}px Courier;color:#000000;}}</style><p class="a">{testing}</p>"""
-st.markdown(html_str, unsafe_allow_html=True)
+testing_str = f"""<style>p.a {{font: bold {12}px Courier;color:#000000;}}</style><p class="a">{testing}</p>"""
+st.markdown(testing_str, unsafe_allow_html=True)
 
 if submit:
     batch = tokenizer(text, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
