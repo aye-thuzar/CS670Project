@@ -54,7 +54,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 text = [user_input_abstract[0] + user_input_claims[0]]
 
 testing = "text " + user_input_abstract
-html_str = f"""<style>p.a {{font: bold {12}px Courier;color:#000000;}}</style><p class="a">{result}</p>"""
+html_str = f"""<style>p.a {{font: bold {12}px Courier;color:#000000;}}</style><p class="a">{testing}</p>"""
 st.markdown(html_str, unsafe_allow_html=True)
 
 if submit:
