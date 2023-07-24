@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-#milestone-2
 
-##Sentiment Analysis using Transformers pipeline function
-
-link: https://huggingface.co/spaces/ayethuzar/sentiment-analysis-using-transformers-pipeline
-
-Github: https://github.com/aye-thuzar/SentimentAnalysis
-=======
 # CS 670 Project - Finetuning Language Models
 
 ************************
@@ -64,4 +56,4 @@ References:
 3. https://huggingface.co/anferico/bert-for-patents
 
 4. https://huggingface.co/transformers/v3.2.0/custom_datasets.html
->>>>>>> d7ae9842e2961897632fbf51188b7167bdf7e4d0
+
