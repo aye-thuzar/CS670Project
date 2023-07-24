@@ -5,7 +5,7 @@ Milestone-3 notebook: https://github.com/aye-thuzar/CS670Project/blob/milestone-
 
 Hugging Face App: 
 
-Landing Page for the App:
+Landing Page for the App: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
 App Demonstration Video: 
 
