@@ -47,7 +47,7 @@ user_input_abstract = form.text_area(label = 'abstract', value = dataframe['abst
 user_input_claims = form.text_area(label = 'claims', value = dataframe['claims'][0])
 submit = form.form_submit_button('Submit')
 
-model_name = "ayethuzar/tuned-for-patentability"
+model_name = 'AI-Growth-Lab/PatentSBERTa' #"ayethuzar/tuned-for-patentability"
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
