@@ -1,7 +1,7 @@
 import streamlit as st
 import torch
 import torch.nn.functional as F
-from transformers import pipeline
+from transformers
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 st.title('Can I Patent This?')
@@ -18,7 +18,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 test = [user_input]
 
 if submit:
-    classifier = pipeline("sentiment-analysis", model = model_name) #using the pipeline() function
     batch = tokenizer(test, padding = True, truncation = True, max_length = 512, return_tensors = "pt")
     
     with torch.no_grad():
