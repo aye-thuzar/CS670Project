@@ -21,7 +21,6 @@ Landing Page for the App: https://sites.google.com/view/cs670-finetuning-languag
 
 App Demonstration Video: 
 
-
 ************************
 
 ## Summary
@@ -47,7 +46,15 @@ Dataset: https://github.com/suzgunmirac/hupd
 
 **milestone3:**
 
-The following notebook has the tuned model.
+The following notebook has the tuned model. There are 6 classes in the Harvard USPTO patent dataset and I decided to encode them as follow:
+
+decision_to_str = {'REJECTED': 0, 'ACCEPTED': 1, 'PENDING': 1, 'CONT-REJECTED': 0, 'CONT-ACCEPTED': 1, 'CONT-PENDING': 1}
+
+so that I can get a patentability score between 0 and 1.
+
+I use the pertained-model 'distilbert-base-uncased' from the Hugging face hub and tune it with the smaller dataset.
+
+The average accuracy of the validation set is about 89%.
 
 milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb
 
@@ -55,7 +62,7 @@ milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_
 
 Please see Milestone4Documentation.md: 
 
-Here is the landing page for my app: 
+Here is the landing page for my app: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
 
 **************
