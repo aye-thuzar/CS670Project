@@ -64,7 +64,7 @@ The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar
 
 **milestone4:**
 
-Please see Milestone4Documentation.md: 
+Please see Milestone4Documentation.md: https://github.com/aye-thuzar/CS670Project/blob/main/milestone4Documentation.md
 
 Here is the landing page for my app: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
