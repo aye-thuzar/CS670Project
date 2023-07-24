@@ -56,7 +56,7 @@ so that I can get a patentability score between 0 and 1.
 
 I use the pertained-model 'distilbert-base-uncased' from the Hugging face hub and tune it with the smaller dataset.
 
-The average accuracy of the validation set is about 89%.
+
 
 milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb
 
