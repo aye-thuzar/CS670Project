@@ -12,7 +12,7 @@ Hugging Face App: https://huggingface.co/spaces/ayethuzar/can-i-patent-this
 
 Landing Page for the App: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
-App Demonstration Video: 
+App Demonstration Video: https://youtu.be/UEWUe-8fDOw
 
 The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
 
@@ -54,11 +54,9 @@ I tested my shared model here: https://github.com/aye-thuzar/CS670Project/blob/m
 References:
 
 1. https://colab.research.google.com/drive/1_ZsI7WFTsEO0iu_0g3BLTkIkOUqPzCET?usp=sharing#scrollTo=B5wxZNhXdUK6
-
 2. https://huggingface.co/AI-Growth-Lab/PatentSBERTa
-
 3. https://huggingface.co/anferico/bert-for-patents
-
 4. https://huggingface.co/transformers/v3.2.0/custom_datasets.html
-
 5. https://colab.research.google.com/drive/1TzDDCDt368cUErH86Zc_P2aw9bXaaZy1?usp=sharing
+6. https://huggingface.co/docs/transformers/model_sharing
+7. https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader
