@@ -83,6 +83,6 @@ References:
 
 5. https://colab.research.google.com/drive/1TzDDCDt368cUErH86Zc_P2aw9bXaaZy1?usp=sharing
    
-7. https://huggingface.co/docs/transformers/model_sharing
+6. https://huggingface.co/docs/transformers/model_sharing
 
-8. https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader
+7. https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader
