@@ -13,6 +13,9 @@ st.title('Can I Patent This?')
 
 st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset](https://github.com/suzgunmirac/hupd)")
 
+# prepopulate with a sample csv file that has one patent application
+dataframe = pd.read_csv('patent_application.csv') 
+
 # to upload a .csv file with one application
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
