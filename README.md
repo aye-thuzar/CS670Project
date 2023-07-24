@@ -21,6 +21,8 @@ Landing Page for the App: https://sites.google.com/view/cs670-finetuning-languag
 
 App Demonstration Video: 
 
+The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
+
 ************************
 
 ## Summary
@@ -57,6 +59,8 @@ I use the pertained-model 'distilbert-base-uncased' from the Hugging face hub an
 The average accuracy of the validation set is about 89%.
 
 milestone3 notebook: https://github.com/aye-thuzar/CS670Project/blob/main/CS670_milestone_3_AyeThuzar.ipynb
+
+The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
 
 **milestone4:**
 
