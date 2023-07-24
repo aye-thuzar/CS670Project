@@ -11,9 +11,9 @@ from io import StringIO
 
 st.title('Can I Patent This?')
 
-st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset](https://github.com/suzgunmirac/hupd)")
+st.write("This model is tuned with all patent applications submitted in Jan 2016 in [the Harvard USPTO patent dataset.](https://github.com/suzgunmirac/hupd)")
 
-st.write("You can upload a .csv file with a patent application to calculate the patentability score")
+st.write("You can upload a .csv file with a patent application to calculate the patentability score.")
 
 # prepopulate with a sample csv file that has one patent application
 dataframe = pd.read_csv('patent_application.csv') 
@@ -54,7 +54,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 text = [user_input_abstract + user_input_claims]
 
 testing = "text " + user_input_abstract
-testing_str = f"""<style>p.a {{font: bold {12}px Courier;color:#000000;}}</style><p class="a">{testing}</p>"""
+testing_str = f"{text}"
 st.markdown(testing_str, unsafe_allow_html=True)
 
 if submit:
