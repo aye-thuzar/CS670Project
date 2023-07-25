@@ -19,7 +19,7 @@ Hugging Face App: https://huggingface.co/spaces/ayethuzar/can-i-patent-this
 
 Landing Page for the App: https://sites.google.com/view/cs670-finetuning-language-mode/home
 
-App Demonstration Video: https://youtu.be/UEWUe-8fDOw
+App Demonstration Video: [https://youtu.be/UEWUe-8fDOw](https://youtu.be/IXMJDoUqXK4)
 
 The tuned model shared to the Hugging Face Hub: https://huggingface.co/ayethuzar/tuned-for-patentability/tree/main
 
